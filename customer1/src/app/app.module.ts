@@ -4,15 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
-import { UpdatecustomerComponent } from './updatecustomer/updatecustomer.component';
-import { DeletecustomerComponent } from './deletecustomer/deletecustomer.component';
+
+import { SenderComponent } from './sender/sender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponent,
-    UpdatecustomerComponent,
-    DeletecustomerComponent
+    
+    SenderComponent
   ],
   imports: [
     BrowserModule,

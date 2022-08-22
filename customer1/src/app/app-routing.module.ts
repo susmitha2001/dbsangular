@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CustomerComponent } from './customer/customer.component';
-import { DeletecustomerComponent } from './deletecustomer/deletecustomer.component';
-import { UpdatecustomerComponent } from './updatecustomer/updatecustomer.component';
+
+import { SenderComponent } from './sender/sender.component';
+
 
 const routes: Routes = [
-  {path:"create" , component: CustomerComponent},
-  {path:"update" , component: UpdatecustomerComponent},
-  {path:"delete" , component: DeletecustomerComponent},
+   {path= '' , redirectTo:'payments' ,pathMatch:'full'},
+  {path:"customer" , component: CustomerComponent},
+  {path:"sender" , component: SenderComponent},
+  {path:"Payments" , component:SenderComponent},
+ 
 ];
 
 @NgModule({
